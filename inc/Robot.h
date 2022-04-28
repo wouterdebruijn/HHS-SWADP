@@ -1,15 +1,15 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-#include "Position.h"
+#include "Positionable.h"
 
 class Robot {
     private:
-        Position *position;
+        Positionable *position;
     public:
         void run();
         void show();
-        Robot(Position*);
+        Robot(Positionable*);
 };
 
 #endif //ROBOT_H

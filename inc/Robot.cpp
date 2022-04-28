@@ -10,6 +10,6 @@ void Robot::show() {
     std::cout << position->x() << position->y() << std::endl;
 }
 
-Robot::Robot(Position *position) {
+Robot::Robot(Positionable *position) {
     this->position = position;
 }
