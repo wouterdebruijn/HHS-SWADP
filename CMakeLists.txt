@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(HHS-SWADP VERSION 0.1.0)
+project(HHSSWADP VERSION 0.1.0)
 
-include(CTest)
-enable_testing()
+add_subdirectory(inc)
 
-include_directories(lib)
+add_executable(HHSSWADP main.cpp)
 
-add_executable(HHS-SWADP main.cpp)
+target_link_libraries(HHSSWADP PUBLIC Position Robot)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+target_include_directories(HHSSWADP PUBLIC
+                          "${PROJECT_BINARY_DIR}"
+                          "${PROJECT_SOURCE_DIR}/inc"
+                          )
