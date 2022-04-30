@@ -1,19 +1,19 @@
 #include "Position.h"
 
-int Position::x() {
+int Position::x()
+{
     return X;
 }
 
-int Position::y() {
+int Position::y()
+{
     return Y;
 }
 
-void Position::move(int dx, int dy) {
+void Position::move(int dx, int dy)
+{
     this->X = this->X + dx;
     this->Y = this->Y + dy;
 }
 
-Position::Position(int x, int y) {
-    this->X = x;
-    this->Y = y;
-}
+Position::Position(int x, int y) : X(x), Y(y) {}

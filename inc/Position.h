@@ -1,16 +1,19 @@
 #ifndef POSITION_H
 #define POSITION_H
 
-class Position {
-    private:
-        int X;
-        int Y;
-    
-    public:
-        Position(int, int);
-        int x();
-        int y();
-        void move(int, int);
+#include "Location.h"
+
+class Position : public Location
+{
+private:
+    int X;
+    int Y;
+
+public:
+    Position(int, int);
+    virtual int x();
+    virtual int y();
+    virtual void move(int, int);
 };
 
-#endif //POSITION_H
+#endif // POSITION_H

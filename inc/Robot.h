@@ -1,15 +1,17 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-#include "Positionable.h"
+#include "Location.h"
 
-class Robot {
-    private:
-        Positionable *position;
-    public:
-        void run();
-        void show();
-        Robot(Positionable*);
+class Robot
+{
+private:
+    Location *position;
+
+public:
+    virtual void run();
+    virtual void show();
+    Robot(Location *);
 };
 
-#endif //ROBOT_H
+#endif // ROBOT_H
