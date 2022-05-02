@@ -4,6 +4,7 @@
 class Location
 {
 public:
+    virtual ~Location();
     virtual int x() = 0;
     virtual int y() = 0;
     virtual void move(int, int) = 0;
