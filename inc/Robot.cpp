@@ -1,4 +1,5 @@
 #include "Robot.h"
+#include "Location.h"
 
 #include <iostream>
 

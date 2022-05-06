@@ -1,7 +1,7 @@
 #ifndef ROBOT_H
 #define ROBOT_H
 
-#include "Location.h"
+class Location;
 
 class Robot
 {
