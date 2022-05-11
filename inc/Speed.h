@@ -10,8 +10,8 @@ private:
 
 public:
     Speed();
-    void measure();
-    float getValue();
+    virtual void measure();
+    virtual float getValue();
 };
 
 #endif // SPEED_H

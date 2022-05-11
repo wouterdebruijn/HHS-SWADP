@@ -7,7 +7,7 @@ class DigitalMeter : public Observer
 {
 public:
   DigitalMeter(Subject*);
-  void update();
+  virtual void update();
 };
 
 #endif // DIGITAL_METER_H

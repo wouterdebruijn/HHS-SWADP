@@ -10,7 +10,7 @@ private:
 
 public:
     Car(Speed *);
-    void measureSpeed();
+    virtual void measureSpeed();
 };
 
 #endif // CAR_H
