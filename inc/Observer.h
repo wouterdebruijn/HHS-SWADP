@@ -10,29 +10,14 @@ class Subject;
 class Observer
 {
 private:
-  Subject *S;
+  Subject *subject;
 
 protected:
-  Subject *getSubject() const { return S; }
+  Subject *getSubject() const;
 
 public:
-  Observer(Subject *s);
+  Observer(Subject*);
   virtual ~Observer();
   virtual void update() = 0;
-};
-
-class Subject
-{
-private:
-  list<Observer *> L;
-
-protected:
-  virtual void notify();
-
-public:
-  Subject() {}
-  virtual ~Subject() {}
-  virtual void insert(Observer *s) { L.push_front(s); }
-  virtual void remove(Observer *s) { L.remove(s); }
 };
 #endif // OBSERVER_H

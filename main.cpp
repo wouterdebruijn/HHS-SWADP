@@ -12,6 +12,6 @@ int main()
     AnalogMeter analogMeter(&speed);
 
     Car car(&speed);
-    car.messureSpeed();
+    car.measureSpeed();
     return 0;
 }

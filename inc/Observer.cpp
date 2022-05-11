@@ -1,12 +1,7 @@
 #include "Observer.h"
+#include "Subject.h"
 
-void Subject::notify()
-{
-  for (list<Observer *>::iterator i = L.begin(); i != L.end(); ++i)
-    (*i)->update();
-}
-
-Observer::Observer(Subject *s) : S(s)
+Observer::Observer(Subject *subject) : subject(subject)
 {
   getSubject()->insert(this);
 }
@@ -14,4 +9,9 @@ Observer::Observer(Subject *s) : S(s)
 Observer::~Observer()
 {
   getSubject()->remove(this);
+}
+
+Subject *Observer::getSubject() const
+{
+  return subject;
 }
