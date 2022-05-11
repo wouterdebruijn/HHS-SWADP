@@ -6,7 +6,7 @@
 class AnalogMeter : public Observer
 {
 public:
-  AnalogMeter(Subject*);
+  AnalogMeter(Subject *);
   void update();
 };
 
