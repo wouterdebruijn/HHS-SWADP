@@ -5,7 +5,7 @@ add_subdirectory(inc)
 
 add_executable(HHSSWADP main.cpp)
 
-target_link_libraries(HHSSWADP PUBLIC Position Robot)
+target_link_libraries(HHSSWADP PUBLIC Observer DigitalMeter AnalogMeter Car Speed)
 
 target_include_directories(HHSSWADP PUBLIC
                           "${PROJECT_BINARY_DIR}"

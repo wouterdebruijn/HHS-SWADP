@@ -1,2 +1,5 @@
-add_library(Position Position.cpp)
-add_library(Robot Robot.cpp)
+add_library(Car Car.cpp)
+add_library(Speed Speed.cpp)
+add_library(Observer Observer.cpp)
+add_library(DigitalMeter DigitalMeter.cpp)
+add_library(AnalogMeter AnalogMeter.cpp)

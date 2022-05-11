@@ -1,13 +1,17 @@
-#include <iostream>
+#include "Speed.h"
+#include "Car.h"
 
-#include "Position.h"
-#include "Robot.h"
+#include "DigitalMeter.h"
+#include "AnalogMeter.h"
 
-int main(int, char **)
+int main()
 {
-    Position position(5, 10);
-    Robot robot(&position);
-    robot.run();
-    robot.show();
+    Speed speed;
+    
+    DigitalMeter digitalMeter(&speed);
+    AnalogMeter analogMeter(&speed);
+
+    Car car(&speed);
+    car.messureSpeed();
     return 0;
 }
