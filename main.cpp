@@ -49,14 +49,14 @@ Observer::~Observer()
 // ================================================================
 // DomainLayer
 // ================================================================
-class Element : public Subject
+class Element
 {
 public:
     virtual ~Element() {}
     virtual void draw() = 0;
     virtual string name() = 0;
 };
-class Ninja : public Element
+class Ninja : public Element, public Subject
 {
 private:
     string Name;
