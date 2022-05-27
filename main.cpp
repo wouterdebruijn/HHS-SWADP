@@ -53,28 +53,26 @@ class Element
 {
 public:
     virtual ~Element() {}
-    virtual void draw() = 0;
     virtual string name() = 0;
 };
 class Ninja : public Element, public Subject
 {
 private:
     string Name;
-    int AantalLevens;
+    int Lives;
 
 public:
-    Ninja(string n) : Name(n), AantalLevens(1) {}
-    virtual void draw() { cout << name() << AantalLevens; }
+    Ninja(string n) : Name(n), Lives(1) {}
     virtual string name() { return Name; }
-    virtual int aantalLevens() { return AantalLevens; }
+    virtual int lives() { return Lives; }
     virtual void incLevens()
     {
-        AantalLevens++;
+        Lives++;
         notify();
     }
     virtual void decLevens()
     {
-        AantalLevens--;
+        Lives--;
         notify();
     }
 };
@@ -90,7 +88,7 @@ private:
 public:
     NinjaWindow(Ninja &n) : Observer(&n), N(n) {}
     virtual ~NinjaWindow() {}
-    virtual void draw() { N.draw(); }
+    virtual void draw() { cout << N.name() << N.lives(); }
     virtual void update() { draw(); }
 };
 int main()
