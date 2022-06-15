@@ -4,6 +4,7 @@ project(HHSSWADP VERSION 0.1.0)
 add_executable(HHSSWADP main.cpp)
 
 add_subdirectory(inc)
+target_link_libraries(HHSSWADP PUBLIC Observer)
 
 target_include_directories(HHSSWADP PUBLIC
                           "${PROJECT_BINARY_DIR}"
