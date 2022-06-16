@@ -1,1 +1,7 @@
 add_library(Observer Observer.cpp)
+add_library(Subject Observer.cpp)
+add_library(ConsoleApp ConsoleApp.cpp)
+add_library(CustomMachine CustomMachine.cpp)
+add_library(StepperMotor StepperMotor.cpp)
+add_library(TemperatuurDisplay TemperatuurDisplay.cpp)
+add_library(Thermocouple Thermocouple.cpp)
