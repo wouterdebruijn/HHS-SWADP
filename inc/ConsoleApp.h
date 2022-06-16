@@ -6,10 +6,9 @@ using namespace std;
 #include "App.h"
 
 class ConsoleApp : public App {
-    public:
+public:
     ConsoleApp(Machine* m, TemperatuurDisplay* td1, TemperatuurDisplay* td2);
-    virtual ~ConsoleApp();
+    virtual ~ConsoleApp() {};
     virtual void render();
-
 };
 #endif

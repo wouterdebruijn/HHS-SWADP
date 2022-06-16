@@ -1,5 +1,5 @@
-#ifndef __THERMOCOUPLE_H
-#define __THERMOCOUPLE_H
+#ifndef __Thermocouple_H
+#define __Thermocouple_H
 
 using namespace std;
 
@@ -9,7 +9,7 @@ class Thermocouple : public TSensor
 {
 public:
     Thermocouple();
-    virtual ~Thermocouple();
+    virtual ~Thermocouple() {};
     virtual void read();
     virtual int temperatuur();
 private:

@@ -2,14 +2,15 @@
 #define __TEMPERATUURDISPLAY_H
 
 using namespace std;
-class Motor;
+class TSensor;
 
 #include "Observer.h"
 
 class TemperatuurDisplay : public Observer
 {
 public:
-    TemperatuurDisplay(Motor* motor);
+    TemperatuurDisplay(TSensor*);
+    ~TemperatuurDisplay() {};
     virtual void update();
     virtual void schijf(int);
 };

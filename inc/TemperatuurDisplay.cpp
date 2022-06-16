@@ -1,21 +1,20 @@
 #include "TemperatuurDisplay.h"
 
-#include "Motor.h"
 #include "TSensor.h"
 
 #include <iostream>
 
-TemperatuurDisplay::TemperatuurDisplay(Motor* motor) : Observer(motor) {};
+TemperatuurDisplay::TemperatuurDisplay(TSensor* sensor) : Observer(sensor) {};
 
 void TemperatuurDisplay::schijf(int temperatuur) {
-    cout << "Temperatuur: " << temperatuur << endl;
+    cout << "Temperatuur Display: " << temperatuur << endl;
 }
 
 void TemperatuurDisplay::update() {
-    Motor* motor = dynamic_cast<Motor*>(this->getSubject());
+    TSensor* sensor = dynamic_cast<TSensor*>(this->getSubject());
 
-    if (motor != nullptr) {
-        int temp = motor->tsensor()->temperatuur();
+    if (sensor != nullptr) {
+        int temp = sensor->temperatuur();
         this->schijf(temp);
     }
 }

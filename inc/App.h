@@ -6,17 +6,19 @@ using namespace std;
 class TemperatuurDisplay;
 class Machine;
 
-class App {
+class App
+{
 public:
-    App(Machine* m, TemperatuurDisplay* td1, TemperatuurDisplay* td2);
-    virtual ~App();
+    App(Machine *m, TemperatuurDisplay *td1, TemperatuurDisplay *td2);
+    virtual ~App() {};
     virtual void run();
     virtual void halt();
-    virtual TemperatuurDisplay* display1() const;
-    virtual TemperatuurDisplay* display2() const;
+    virtual TemperatuurDisplay *display1() const;
+    virtual TemperatuurDisplay *display2() const;
+
 private:
-    Machine* M;
-    TemperatuurDisplay* TD1;
-    TemperatuurDisplay* TD2;
+    Machine *M;
+    TemperatuurDisplay *TD1;
+    TemperatuurDisplay *TD2;
 };
 #endif

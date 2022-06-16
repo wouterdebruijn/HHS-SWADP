@@ -13,8 +13,9 @@ private:
     Mone* mone;
     Mtwo* mtwo;
 public:
-    virtual Motor* motor1() = 0;
-    virtual Motor* motor2() = 0;
+    virtual ~Machine() {};
+    virtual Motor* motor1() const = 0;
+    virtual Motor* motor2() const = 0;
     virtual void run() = 0;
     virtual void halt() = 0;
 };

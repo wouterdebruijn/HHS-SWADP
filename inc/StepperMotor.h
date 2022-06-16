@@ -2,13 +2,14 @@
 #define __STEPPERMOTOR_H
 
 #include "Motor.h"
-#include "TSensor.h"
+
+class TSensor;
 
 class StepperMotor : public Motor
 {
 public:
     StepperMotor(TSensor*);
-    virtual ~StepperMotor();
+    virtual ~StepperMotor() {};
     virtual int voltage() const;
     virtual void start();
     virtual void stop();

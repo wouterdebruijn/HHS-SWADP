@@ -3,9 +3,13 @@
 
 using namespace std;
 
-class TSensor
+#include "Observer.h"
+
+class TSensor : public Subject
 {
 public:
+    TSensor() {}
+    virtual ~TSensor() {};
     virtual void read() = 0;
     virtual int temperatuur() = 0;
 };

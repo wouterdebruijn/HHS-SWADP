@@ -10,6 +10,7 @@ void Thermocouple::read() {
     cout << "Temperature debug: ";
     cin >> Temperatuur;
     cout << "\n";
+    notify();
 }
 
 int Thermocouple::temperatuur() {

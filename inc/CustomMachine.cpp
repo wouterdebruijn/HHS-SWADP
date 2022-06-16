@@ -3,11 +3,11 @@
 
 CustomMachine::CustomMachine(Motor* m1 , Motor* m2): mone(m1), mtwo(m2) {};
 
-Motor* CustomMachine::motor1() {
+Motor* CustomMachine::motor1() const {
     return mone;
 }
 
-Motor* CustomMachine::motor2() {
+Motor* CustomMachine::motor2() const {
     return mtwo;
 }
 

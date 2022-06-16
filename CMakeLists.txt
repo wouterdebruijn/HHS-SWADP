@@ -5,13 +5,13 @@ add_executable(HHSSWADP main.cpp)
 
 add_subdirectory(inc)
 
-target_link_libraries(HHSSWADP PUBLIC Observer)
-target_link_libraries(HHSSWADP PUBLIC Subject)
+target_link_libraries(HHSSWADP PUBLIC Thermocouple)
 target_link_libraries(HHSSWADP PUBLIC ConsoleApp)
+target_link_libraries(HHSSWADP PUBLIC App)
+target_link_libraries(HHSSWADP PUBLIC Observer)
 target_link_libraries(HHSSWADP PUBLIC CustomMachine)
 target_link_libraries(HHSSWADP PUBLIC StepperMotor)
 target_link_libraries(HHSSWADP PUBLIC TemperatuurDisplay)
-target_link_libraries(HHSSWADP PUBLIC Thermocouple)
 
 target_include_directories(HHSSWADP PUBLIC
                           "${PROJECT_BINARY_DIR}"
