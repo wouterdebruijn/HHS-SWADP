@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="c66UH4cIgb8N5KDXpZrv" name="Page-1">
-        <mxGraphModel dx="4905" dy="2508" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="3531" dy="1904" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -233,7 +233,7 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="182" value="S" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="83">
+                <mxCell id="182" value="S" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="83" vertex="1" connectable="0">
                     <mxGeometry x="0.824" y="2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
@@ -486,6 +486,32 @@
                 </mxCell>
                 <mxCell id="181" value="&lt;p&gt;TemperatuurDisplay(Subject s): Observer(s) {};&lt;br&gt;update() { &lt;span&gt;&#9;&lt;/span&gt;getSubject()-&amp;gt;tsensor()-&amp;gt;read();&lt;br&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;&amp;nbsp;schrijf(getSubject()-&amp;gt;tsensor()-&amp;gt;temperatuur()); }&lt;br&gt;schrijf(int i) { cout &amp;lt;&amp;lt; &quot;Temper: &quot; &amp;lt;&amp;lt; i &amp;lt;&amp;lt; &quot;\n&quot;; }&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;startSize=42;align=left;" parent="1" vertex="1">
                     <mxGeometry x="1050" y="184" width="530" height="184" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" value="" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="1" source="91" target="2">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="182.55999999999995" y="473.24400000000014" as="sourcePoint"/>
+                        <mxPoint x="400" y="394" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-760" y="580"/>
+                            <mxPoint x="-220" y="580"/>
+                            <mxPoint x="-220" y="384"/>
+                            <mxPoint x="50" y="384"/>
+                            <mxPoint x="320" y="384"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="185" value="" style="endArrow=open;endSize=12;dashed=1;html=1;entryX=0.293;entryY=0.978;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="105" target="36">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="-750" y="532" as="sourcePoint"/>
+                        <mxPoint x="400" y="394" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-560" y="600"/>
+                            <mxPoint x="-210" y="600"/>
+                            <mxPoint x="-210" y="630"/>
+                            <mxPoint x="677" y="630"/>
+                            <mxPoint x="677" y="570"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>

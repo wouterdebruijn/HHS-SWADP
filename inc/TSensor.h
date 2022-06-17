@@ -4,7 +4,6 @@
 using namespace std;
 
 #include "Observer.h"
-
 class TSensor : public Subject
 {
 public:
